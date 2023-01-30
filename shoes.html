@@ -116,9 +116,11 @@
     display: flex;
     justify-content: center;
   }
-   .topnav-responsive {
-    display: none;
-   }
+ 
+#myTopnav{
+  display: none;
+}
+
   nav ul {
     list-style: none;
     margin: 0;
@@ -228,9 +230,10 @@
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
       x.className += "-responsive";
+      x.style.display = "none";
     } else {
       x.className = "topnav";
-     
+      x.style.display = "block";
     }
   }
       </script>
