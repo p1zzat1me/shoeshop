@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+ .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav a {
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: gray;
+  }
+  
+  /* Hide the "Contact Us" menu item */
+  .contact-us {
+    display: none;
+  }
+  
+  
+  /* Make the navigation menu responsive */
+  @media screen and (max-width: 600px) {
+    nav {
+      position: relative;
+    }
+    
+    .menu-icon {
+      display: block;
+      float: right;
+    }
+    
+    nav.responsive {
+      position: relative;
+    }
+    
+    nav.responsive ul {
+      display: block;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+    }
+    nav.responsive .contact-us {
+      display: block;
+    }
+  }
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: beige;
+        }
+        
+        header {
+          background-color: lightblue;
+          padding: 20px;
+          text-align: center;
+        }
+        
+        nav {
+          background-color: gray;
+          display: flex;
+          justify-content: center;
+        }
+        
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+        
+        nav a {
+          color: white;
+          display: block;
+          padding: 10px 20px;
+          text-decoration: none;
+        }
+        
+        main {
+          padding: 20px;
+        }
+        
+        h2 {
+          margin-top: 50px;
+        }
+        
+        footer {
+          background-color: lightgray;
+          padding: 20px;
+          text-align: center;
+        }
+  
+  /* Style the navigation menu */
+  nav {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+  }
+   .topnav-responsive {
+    display: none;
+   }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    background-color: gray;
+  }
+    
+    .menu-icon {
+      display: block;
+      float: right;
+      cursor: pointer;
+    }
+    
+    nav.responsive {
+      position: relative;
+    }
+    
+    nav.responsive ul {
+      display: block;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+    }
+      #boots{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 40px;
+        font-weight: 2;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+      }
+
+
+      </style>
+
+
+
+    <title>Shoe Store</title>
+  </head>
+  <body>
+    <header>
+        <button class="menu-icon" onclick="toggleMenu()">&#9776;</button>
+
+        <!-- Add the navigation menu -->
+        <nav id="myTopnav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      <h1>Shoe Store</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#men">Men's Shoes</a></li>
+        <li><a href="#women">Women's Shoes</a></li>
+        <li><a href="#children">Children's Shoes</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="men">
+        <h2>Men's Shoes</h2>
+        <p>Check out our selection of stylish and comfortable shoes for men:</p>
+        <ul id="boots">
+          <li>Sneakers</li>
+          <li>Loafers</li>
+          <li>Boots</li>
+        </ul>
+      </section>
+      <section id="women">
+        <h2>Women's Shoes</h2>
+        <p>Find the perfect pair of shoes to match any outfit:</p>
+        <ul id="boots">
+          <li>Heels</li>
+          <li>Flats</li>
+          <li>Sandals</li>
+        </ul>
+      </section>
+      <section id="children">
+        <h2>Children's Shoes</h2>
+        <p>Get your kids ready for any adventure with our durable and fun shoes:</p>
+        <ul id="boots">
+          <li>Athletic shoes</li>
+          <li>Rain boots</li>
+          <li>Dress shoes</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Shoe Store 2023</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += "-responsive";
+    } else {
+      x.className = "topnav";
+     
+    }
+  }
+      </script>
+  </body>
+</html>
